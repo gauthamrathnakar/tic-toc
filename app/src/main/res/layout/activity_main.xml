@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/relative1"
+       android:layout_marginLeft="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Player1:0"
+        android:textSize="30dp"
+        android:id="@+id/player1text"
+        />
+
+
+
+    <TextView
+        android:id="@+id/player2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Player2:0"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/player1text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="RESET"
+        android:layout_marginLeft="300dp"
+        android:id="@+id/resetbutton"/>
+
+   </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp">
+            
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_00"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_01"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="140dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_02"
+
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="10dp"/>
+            
+            
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_10"
+                android:layout_below="@id/button_00"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_11"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="140dp"
+                android:layout_below="@+id/button_01"/>
+
+            <Button
+                android:id="@+id/button_12"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_below="@id/button_02"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_20"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/button_10"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:id="@+id/button_21"
+                android:layout_below="@id/button_11"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/button_22"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_below="@id/button_12"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
